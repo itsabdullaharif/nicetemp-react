@@ -146,9 +146,9 @@ function App() {
 
             <Overviewcont>
                 <Overviewul className="overviewul">
-                    <Heading className={background ? "color" : "nocolor"} onClick={() => setContent("FirstCard")}>OVERVIEW</Heading>
-                    <Heading className={background ? "color" : "nocolor"} onClick={() => setContent("SecondCard")}>FOUNDER</Heading>
-                    <Heading className={background ? "color" : "nocolor"} onClick={() => setContent("ThirdCard")}>MISSION</Heading>
+                    <Heading onClick={() => setContent("FirstCard")}>OVERVIEW</Heading>
+                    <Heading onClick={() => setContent("SecondCard")}>FOUNDER</Heading>
+                    <Heading onClick={() => setContent("ThirdCard")}>MISSION</Heading>
                 </Overviewul>
                 <Txtchng className="mainbox">
                     {content === "FirstCard" && <Overview />}

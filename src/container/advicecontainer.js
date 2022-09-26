@@ -11,6 +11,7 @@ background-color: #f2f2f2;
 padding: 30px 50px;
 display: flex;
 justify-content: center;
+margin-bottom: 5rem;
 
 @media (max-width: 420px) {
 padding: 3rem 0;

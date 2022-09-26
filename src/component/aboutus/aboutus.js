@@ -38,6 +38,7 @@ width: 40%;
 @media (max-width: 820px) {
     width: unset;
 }
+
 @media (max-width: 740px){
     width: 80%;
 }
@@ -60,6 +61,9 @@ height:55rem;
 }
 @media (max-width: 740px){
     width: 80%;
+}
+@media (max-width: 541px){
+    width: 100%;
 }
 @media (max-width: 420px) {
     width: 95%;

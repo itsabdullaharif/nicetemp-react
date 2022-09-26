@@ -16,7 +16,7 @@ justify-content: center;
 `
 
 export const Designflex = styled.div`
-@media (max-width: 500px){
+@media (max-width: 540px){
     width: 100%;
 }
 `

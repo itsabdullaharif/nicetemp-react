@@ -10,7 +10,9 @@ ackground-color: #f2f2f2;
     flex-direction: column;
 
 
-
+    @media(max-width:540px){
+        padding 30px 0px;
+    }
     @media(max-width:420px){
         padding 30px 0px;
     }
