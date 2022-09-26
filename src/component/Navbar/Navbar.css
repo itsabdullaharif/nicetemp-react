@@ -1,0 +1,16 @@
+.show {
+    height: 100vh;
+    width: 25rem;
+    position: fixed;
+    color: white;
+    background-color: black;
+    opacity: .9;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    list-style: none;
+}
+
+.hide {
+    display: none;
+}
