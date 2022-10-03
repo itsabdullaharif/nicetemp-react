@@ -75,7 +75,7 @@ height: 7rem;
 
 
 
-function Whatpplsay() {
+function WhatPplsay() {
     return (
         <WhatPplsayStyle>
             <h1>What People Say</h1>
@@ -105,4 +105,4 @@ function Whatpplsay() {
 
     )
 }
-export default Whatpplsay;
+export default WhatPplsay;

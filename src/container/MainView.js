@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { GlobalStyle } from '../globalstyles/globalstyles';
-import Landingpage from '../component/landingpage/landingpage';
-import Ourworkcont from '../component/Ourwork/Ourwork';
-import Whatwedo from '../component/whatwedo/whatwedo'
-import Designcomponents from '../component/designcomponents/designcomponents'
-import Advicecomponents from '../component/advicecomponents/advicecomponents'
-import Aboutuscomonents from '../component/aboutus/aboutus'
+import LandingPage from '../component/landingpage/landingpage';
+import OurWorkCont from '../component/Ourwork/Ourwork';
+import WhatWedo from '../component/whatwedo/whatwedo'
+import DesignComponents from '../component/designcomponents/designcomponents'
+import AdviceComponents from '../component/advicecomponents/advicecomponents'
+import AboutUsComponents from '../component/aboutus/aboutus'
 import OverviewCont from '../component/overviewcomponents/overviewcomponents'
-import Teamcomponents from '../component/teamcomponents/teamcomponents'
-import Whatpplsay from '../component/whatpplsay/whatpplsay'
-import Contactsignup from '../component/contact&signup/contact&signup'
-import Footercomponents from '../component/footer/footercomponents';
+import TeamComponents from '../component/teamcomponents/teamcomponents'
+import WhatPplsay from '../component/whatpplsay/whatpplsay'
+import ContactSignup from '../component/contact&signup/contact&signup'
+import FooterComponents from '../component/footer/footercomponents';
 import SidebarComp from '../component/Navbar/sidebarcomp';
 import Sidebar from '../sidebar';
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
@@ -21,17 +21,17 @@ function MainView() {
 
             <GlobalStyle />
             <SidebarComp />
-            <Landingpage />
-            <Ourworkcont />
-            <Whatwedo />
-            <Designcomponents />
-            <Advicecomponents />
-            <Aboutuscomonents />
+            <LandingPage />
+            <OurWorkCont />
+            <WhatWedo />
+            <DesignComponents />
+            <AdviceComponents />
+            <AboutUsComponents />
             <OverviewCont />
-            <Teamcomponents />
-            <Whatpplsay />
-            <Contactsignup />
-            <Footercomponents />
+            <TeamComponents />
+            <WhatPplsay />
+            <ContactSignup />
+            <FooterComponents />
         </>
 
     )

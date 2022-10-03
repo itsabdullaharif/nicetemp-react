@@ -98,7 +98,7 @@ padding: 5rem 3rem 3rem 3rem;
 
 
 
-function Whatwedo() {
+function WhatWedo() {
     return (
         <WhatWedoContStle>
             <WhatWedoStyle>
@@ -129,7 +129,7 @@ function Whatwedo() {
         </WhatWedoContStle>
     )
 }
-export default Whatwedo;
+export default WhatWedo;
 
 
 

@@ -60,7 +60,7 @@ height: 150px;
 `
 
 
-function Teamcomponents() {
+function TeamComponents() {
     return (
         <TeamContainerStle>
             <TeamBoxFlex>
@@ -129,4 +129,4 @@ function Teamcomponents() {
         </TeamContainerStle>
     )
 }
-export default Teamcomponents;
+export default TeamComponents;
