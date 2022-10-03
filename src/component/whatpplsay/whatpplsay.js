@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import coma from "../../assests/coma.png"
 
-export const Whatpplsaystyle = styled.div`
+export const WhatPplsayStyle = styled.div`
 width: 74%;
 padding-left: 15rem;
 background-color: #f2f2f2;
@@ -11,11 +11,11 @@ flex-direction: column;
 margin-bottom: 5rem;
 @media (max-width: 920px){
     width: unset;
-    padding: 0 5rem 0 4rem;
+    padding: 0 4rem 0 4rem;
 }
 
 `
-export const Whatpplsaytextstyle = styled.div`
+export const WhatPplsayTextStyle = styled.div`
 background-color: white;
 font-size: 2rem;
 padding: 8rem 3rem;
@@ -30,7 +30,7 @@ line-height: 4rem;
 }
 `
 
-export const Comabox = styled.div`
+export const ComaBox = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -48,7 +48,7 @@ background-color: #2ccc7e;
     height: 15rem;
 }
 `
-export const Opininonflex = styled.div`
+export const OpininonFlex = styled.div`
 display:flex;
 flex-direction:row;
 @media (max-width: 820px) {
@@ -77,11 +77,11 @@ height: 7rem;
 
 function Whatpplsay() {
     return (
-        <Whatpplsaystyle>
+        <WhatPplsayStyle>
             <h1>What People Say</h1>
-            <Opininonflex>
+            <OpininonFlex>
 
-                <Whatpplsaytextstyle>
+                <WhatPplsayTextStyle>
                     Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can
                     manor
                     smart
@@ -94,12 +94,12 @@ function Whatpplsay() {
                     to till like. He an thing rapid these after going drawn or. Timed she his law the spoil round defer.
                     In
                     surprise concerns informed betrayed he learning is ye. Ignorant formerly so ye blessing.
-                </Whatpplsaytextstyle>
-                <Comabox>
+                </WhatPplsayTextStyle>
+                <ComaBox>
                     <Coma src={coma} />
-                </Comabox>
-            </Opininonflex>
-        </Whatpplsaystyle>
+                </ComaBox>
+            </OpininonFlex>
+        </WhatPplsayStyle>
 
 
 

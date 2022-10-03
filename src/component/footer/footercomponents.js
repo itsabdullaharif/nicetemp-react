@@ -15,7 +15,7 @@ justify-content: space-between;
 
 
 
-function Footercomponents() {
+function FooterComponents() {
     return (
         <Footer>
             <p>Sample text. Click to select the text box. Click again or double <br /> click to start editing the text.</p>
@@ -25,4 +25,8 @@ function Footercomponents() {
         </Footer>
     )
 }
-export default Footercomponents;
+export default FooterComponents;
+
+
+
+

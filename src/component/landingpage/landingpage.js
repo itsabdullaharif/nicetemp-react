@@ -3,26 +3,9 @@ import img1 from "../../assests/img-1.jpeg"
 import menu from "../../assests/menu.png"
 import call from "../../assests/call.png"
 import "../Navbar/Navbar.css"
-import { useState } from "react"
-
-export const Parent = styled.div` {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-}
 
 
-`
-export const Navbaricon = styled.img`
-width: 3.3rem;
-height: 3.3rem;
-
-`
-
-
-
-export const Landpgcont = styled.div`
+export const LandPgCont = styled.div`
 display: flex;
 justify-content: center;
 flex-direction: row;
@@ -32,6 +15,13 @@ column-gap: 3rem;
 background-color: white;
 font-family: 'Open Sans', sans-serif;
 padding: 50px 130px;
+.lightfont{
+  font-weight: 100;
+  line-height:5rem;
+}
+.fntgreen{
+  color:#2ccc7e;
+}
 @media(max-width:1025px){
     padding: 50px 82px;
 }
@@ -42,7 +32,7 @@ align-items: center;
 flex-direction: column;
 }
 `
-export const Landpgconttext = styled.div`
+export const LandpgContText = styled.div`
 width:60%;
 @media(max-width: 820px) {
 width: 70%;
@@ -53,7 +43,7 @@ width: 70%;
 
 
 `
-export const Landpghead = styled.div`
+export const LandPgHead = styled.div`
 line-height:2rem;
 font-family: 'Montserrat', sans-serif;
 
@@ -68,13 +58,13 @@ height: 65rem;
     width: 95%;
 }
 `
-export const Landtext = styled.p`
+export const LandText = styled.p`
 font-family: 'Open Sans',sans-serif;
 color: #111111;
 font-size: 1.8rem;
 width:100%
 `
-export const Linktext = styled.a`
+export const LinkText = styled.a`
 list-style: none;
 text-decoration: none;
 color: black;
@@ -87,47 +77,38 @@ color:#2ccc7e;
 
 }
 
-`
-export const Navbar = styled.div`
-
-
 
 `
+
+
 export const Call = styled.img`
 width:5rem;
 margin-bottom:-1rem;
 `
-function Landingpage() {
+function LandingPage() {
 
-    const [showNavbar, setshowNavbar] = useState(false);
+
 
     return (
         <>
-            <Navbar className={showNavbar ? "show" : "hide"}>
-                <i className="fa-solid fa-x" onClick={() => setshowNavbar(!showNavbar)}></i>
-                <li>About</li>
-            </Navbar>
-            <Parent>
-                <div onClick={() => setshowNavbar(!showNavbar)}><Navbaricon src={menu} /></div>
-            </Parent>
-            <Landpgcont>
-                <Landpgconttext>
-                    <h6>WHAT WE DO</h6>
-                    <br />
-                    <Landpghead>
+
+            <LandPgCont>
+                <LandpgContText>
+                    <h5 className="fntgreen">WHAT WE DO</h5>
+                    <LandPgHead>
                         <h1>360° business </h1>
                         <h1> consulting</h1>
                         <h1 className="lightfont"> Can you afford us?</h1>
-                    </Landpghead>
-                    <Landtext>Whether your company looks for a financial consulting, investment <br /> risks assessments or an interim,
+                    </LandPgHead>
+                    <LandText>Whether your company looks for a financial consulting, investment <br /> risks assessments or an interim,
                         HR management, we’re ready to <br />
-                        provide that for you.</Landtext>
-                    <span> <Linktext href="" className="linktext"><Call src={call} />+1 (234) 567-8910
-                    </Linktext></span>
-                </Landpgconttext>
+                        provide that for you.</LandText>
+                    <span> <LinkText href="" className="linktext"><Call src={call} />+1 (234) 567-8910
+                    </LinkText></span>
+                </LandpgContText>
                 <Aboutusimage src={img1} />
-            </Landpgcont>
+            </LandPgCont>
         </>
     )
 }
-export default Landingpage;
+export default LandingPage;

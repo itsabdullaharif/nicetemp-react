@@ -1,36 +1,19 @@
 import React from 'react';
-import Background from './component/whatwedo/whatwedo';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import Whatwedo from './component/whatwedo/whatwedo';
-import Whatwedocont from './container/whatwedocont';
-import { GlobalStyle } from './globalstyles/globalstyles';
-import Whatpplsaycont from './container/whatpplsaycont';
-import Landingpage from './component/landingpage/landingpage';
-import Ourworkcontparent from './container/ourworkcont';
-import Designcontainer from './container/designcontainer';
-import Advicecontainer from './container/advicecontainer';
-import Aboutuscontainer from './container/aboutuscontainer';
-import Teamcontainer from './container/teamcontainer';
-import Contactsignupcont from './container/contact&signupcont';
-import Footercont from './container/footercont';
-import Overviewcont from './container/overviewcontainer';
-
+import MainView from './container/MainView';
+import Sidebar from './sidebar';
+import Contact from './component/pages/contact';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
-    <Landingpage />
-    <Ourworkcontparent />
-    <Whatwedocont />
-    <Designcontainer />
-    <Advicecontainer />
-    <Aboutuscontainer />
-    <Overviewcont />
-    <Teamcontainer />
-    <Whatpplsaycont />
-    <Contactsignupcont />
-    <Footercont />
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<MainView />} />
+        <Route exact path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

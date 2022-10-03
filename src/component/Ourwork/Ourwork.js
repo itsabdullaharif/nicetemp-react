@@ -4,12 +4,31 @@ import analytics from "../../assests/analytics.png"
 import styled from "styled-components";
 
 
-export const Workboxcont = styled.div`
+export const OurworkContParentStyle = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 1.3rem;
+background-color: #f2f2f2;
+padding: 30px 50px;
+
+.green{
+background-color:#2ccc7e;
+color:white;
+font-size: 2rem;
+} 
+@media (max-width: 820px) {
+    padding: 0;
+}
+`
+export const WorkBoxCont = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: center;
 flex-wrap: wrap;
 margin-bottom: 10rem;
+
 @media (max-width: 1025px) {
     padding-left: 5rem;
 }
@@ -17,11 +36,11 @@ margin-bottom: 10rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: unset;
+    padding: 0 1rem;
 }
 
 `
-export const Workbox = styled.div`
+export const WorkBox = styled.div`
 width: 29%;
 margin: 1rem 1rem;
 background-color: white;
@@ -30,6 +49,7 @@ flex-direction: column;
 justify-content: center;
 font-size: 1.8rem;
 padding: 8rem 1rem;
+
 @media (max-width: 1319px) {
     width: 29%;
     padding: 6rem 0rem;
@@ -52,7 +72,7 @@ padding: 8rem 1rem;
 
 
 `
-export const Flexrowcenter = styled.div`
+export const FlexRowCenter = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -73,8 +93,14 @@ width: 8rem;
 `
 export const Center = styled.h1`
 text-align:center;
+font-size: 4rem;
+
+@media(max-width: 420px){
+    font-size: 3.5rem;
+line-break: normal;
+}
 `
-export const Workboxdev = styled.h1`
+export const WorkBoxDev = styled.h1`
 font-size:2.6rem;
 `
 export const Green = styled.h1`
@@ -82,31 +108,30 @@ font-size:2.6rem;
 `
 
 
-function Ourworkcont() {
+function OurWorkCont() {
     return (
-        <>
-            <h3>ABOUT OUR WORK</h3>
+        <OurworkContParentStyle>
 
-
+            <h2>ABOUT OUR WORK</h2>
             <Center>We run all kinds of IT services<br />
                 that vow your success</Center>
 
-            <Workboxcont>
-                <Workbox>
+            <WorkBoxCont>
+                <WorkBox>
 
-                    <Flexrowcenter>
+                    <FlexRowCenter>
                         <Setting src={setting} />
                         <div>
-                            <Workboxdev>Development</Workboxdev>
+                            <WorkBoxDev>Development</WorkBoxDev>
                             <p>Sample text. Click to select the text box. Click again or double click to start editing the
                                 text.
                             </p>
                         </div>
-                    </Flexrowcenter>
-                </Workbox>
-                <Workbox className="green">
+                    </FlexRowCenter>
+                </WorkBox>
+                <WorkBox className="green">
 
-                    <Flexrowcenter>
+                    <FlexRowCenter>
                         <Marketing src={marketing} />
                         <div>
                             <Green>Web Marketing</Green>
@@ -114,26 +139,37 @@ function Ourworkcont() {
                                 text.
                             </p>
                         </div>
-                    </Flexrowcenter>
-                </Workbox>
-                <Workbox>
+                    </FlexRowCenter>
+                </WorkBox>
+                <WorkBox>
 
-                    <Flexrowcenter>
+                    <FlexRowCenter>
                         <Analytic src={analytics} />
                         <div></div>
                         <div>
-                            <Workboxdev>Data Analytic</Workboxdev>
+                            <WorkBoxDev>Data Analytic</WorkBoxDev>
                             <p>Sample text. Click to select the text box. Click again or double click to start editing the
                                 text.
                             </p>
                         </div>
-                    </Flexrowcenter>
-                </Workbox>
-            </Workboxcont>
+                    </FlexRowCenter>
+                </WorkBox>
+            </WorkBoxCont>
 
 
-        </>
+        </OurworkContParentStyle>
 
     )
 }
-export default Ourworkcont;
+export default OurWorkCont;
+
+
+
+
+
+
+
+
+
+
+

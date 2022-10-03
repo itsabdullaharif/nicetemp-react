@@ -2,7 +2,23 @@ import styled from "styled-components";
 
 
 
-export const Inputcontainer = styled.div`
+export const AdviceContainerStle = styled.div`
+background-color: #f2f2f2;
+padding: 30px 50px;
+display: flex;
+justify-content: center;
+margin-bottom: 5rem;
+.namebox,.emailbox, .emailbx, .namebx, .inputboxbtn{
+  @media (max-width: 820px){
+    width:95%;
+  }
+}
+@media (max-width: 420px) {
+padding: 3rem 0;
+height:unset;
+}
+`
+export const InputContainer = styled.div`
 width: 85%;
 align-items: center;
 font-size: 1.7rem;
@@ -11,14 +27,10 @@ border-radius: 2rem;
 padding: 3rem 4rem;
 font-style: 'Open Sans', sans-serif;
 
-// @media (max-width: 1319px) {
-//     display: unset;
-//     padding: 5rem 2rem;
-// }
 @media (max-width: 920px) {
     width: 94%;
 }
-media (max-width: 820px) {
+@media (max-width: 820px) {
     height: 42rem;
     width: 80%;
 }
@@ -31,7 +43,7 @@ media (max-width: 820px) {
 }
 `
 
-export const Textinputwrap = styled.div`
+export const TextInputWrap = styled.div`
 display: flex;
 justify-content: space-between;
 
@@ -40,17 +52,16 @@ justify-content: space-between;
 }
 
 `
-export const Inputsmptxt = styled.div`
+export const InputSmpTxt = styled.div`
 color: #999999;
 `
-export const Inputbox = styled.div`
+export const InputBox = styled.div`
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content:space-evenly;
 width: 65%;
 column-gap: 2rem;
-
 background-color: #f2f2f2;
 padding: 1.5rem;
 border-radius: 3.2rem;
@@ -82,7 +93,7 @@ justify-content:center;
 
 
 `
-export const Namebx = styled.div`
+export const NameBx = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
@@ -90,7 +101,7 @@ align-items: center;
     width: 90%;
 }
 `
-export const Emailbx = styled.div`
+export const EmailBx = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
@@ -100,18 +111,7 @@ align-items: center;
 
 
 `
-export const Namebox = styled.input`
-height: 2.1em;
-border: none;
-border-radius: 4rem;
-font-size: 1.7rem;
-padding: 1rem 1rem;
-@media (max-width: 420px) {
-    width: 90%;
-}
-
-`
-export const Emailbox = styled.input`
+export const NameBox = styled.input`
 height: 2.1em;
 border: none;
 border-radius: 4rem;
@@ -121,7 +121,17 @@ padding: 1rem 1rem;
     width: 90%;
 }
 `
-export const Inputboxbtn = styled.button`
+export const EmailBox = styled.input`
+height: 2.1em;
+border: none;
+border-radius: 4rem;
+font-size: 1.7rem;
+padding: 1rem 1rem;
+@media (max-width: 420px) {
+    width: 90%;
+}
+`
+export const InputBoxBtn = styled.button`
 font-size: 1.6rem;
 background-color: #2ccc7e;
 padding: 1.7rem 4rem;
@@ -137,31 +147,40 @@ text-align: center;
 
 
 
-function Advicecomponents() {
+function AdviceComponents() {
     return (
-        <Inputcontainer>
-            <h1>Get Free Advice</h1>
-            <Textinputwrap>
-                <Inputsmptxt>Sample text. Click to select the text box. <br /> Click again or double click to
-                    start
-                    <br /> editing the
-                    text.
-                </Inputsmptxt>
-                <Inputbox>
-                    <Namebx className="namebx">
-                        <h5>Name</h5><Namebox type="text" placeholder="Enter your name" className="namebox" />
-                    </Namebx>
-                    <Emailbx className="emailbx">
-                        <h5>Email</h5>
-                        <Emailbox type="email" placeholder="Enter a valid email address" className="emailbox" />
-                    </Emailbx>
-                    <Inputboxbtn className="inputboxbtn">Submit</Inputboxbtn>
-                </Inputbox>
-            </Textinputwrap>
+        <AdviceContainerStle>
+            <InputContainer>
+                <h1>Get Free Advice</h1>
+                <TextInputWrap>
+                    <InputSmpTxt>Sample text. Click to select the text box. <br /> Click again or double click to
+                        start
+                        <br /> editing the
+                        text.
+                    </InputSmpTxt>
+                    <InputBox>
+                        <NameBx className="namebx">
+                            <h5>Name</h5><NameBox type="text" placeholder="Enter your name" className="namebox" />
+                        </NameBx>
+                        <EmailBx className="emailbx">
+                            <h5>Email</h5>
+                            <EmailBox type="email" placeholder="Enter a valid email address" className="emailbox" />
+                        </EmailBx>
+                        <InputBoxBtn className="inputboxbtn">Submit</InputBoxBtn>
+                    </InputBox>
+                </TextInputWrap>
 
 
-        </Inputcontainer>
-
+            </InputContainer>
+        </AdviceContainerStle>
     )
 }
-export default Advicecomponents;
+export default AdviceComponents;
+
+
+
+
+
+
+
+

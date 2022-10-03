@@ -2,7 +2,29 @@ import styled from "styled-components";
 import aboutusiamge from "../../assests/aboutusimage.jpeg"
 
 
-export const Aboutustext = styled.div`
+
+
+
+
+export const AboutUsContainerStle = styled.div`
+display: flex;
+flex-direction: row;
+font-size: 1.8rem;
+justify-content: center;
+background-color: white;
+padding: 3rem 0;
+@media (max-width: 820px) {
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+@media (max-width: 740px){
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+`
+export const AboutUsText = styled.div`
 width: 40%;
 margin-bottom: 4rem;
 line-height: 3.8rem;
@@ -22,7 +44,7 @@ padding: 0 4rem;
 
 
 `
-export const Listitem = styled.div`
+export const ListItem = styled.div`
 margin-bottom: 1rem;
 font-weight: 100;
 span {
@@ -32,7 +54,7 @@ span {
 `
 
 
-export const Aboutusimage = styled.div`
+export const AboutUsImage = styled.div`
 width: 40%;
 
 @media (max-width: 820px) {
@@ -52,7 +74,7 @@ width: 40%;
 
 `
 
-export const Imgaboutus = styled.img`
+export const ImgAboutUs = styled.img`
 width:100%;
 height:55rem;
 
@@ -67,9 +89,9 @@ height:55rem;
 }
 @media (max-width: 420px) {
     width: 95%;
-    height: 50rem;
+    height: 50rem;}
 `
-export const Aboutuscomonentscont = styled.div`
+export const AboutUsComonentsCont = styled.div`
 display: flex;
 flex-direction: row;
 font-size: 1.8rem;
@@ -87,7 +109,7 @@ padding: 3rem 0;
     align-items: center;
     }
 `
-export const Strgbtn = styled.button`
+export const StrgBtn = styled.button`
 color: white;
 background-color: #2ccc7e;
 border-radius: 3rem;
@@ -105,34 +127,41 @@ height: 5rem;
 `
 
 
-function Aboutuscomonents() {
+function AboutUsComponents() {
     return (
-        <Aboutuscomonentscont>
+        <AboutUsContainerStle>
+            <AboutUsComonentsCont>
+                <AboutUsText>
+                    <h6>ABOUT US</h6>
+                    <h1>IT Solution Strategy <br /> Development For Your<br />Bussiness</h1>
+                    <p>Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can
+                        manor
+                        smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed
+                        but
+                        wishes. You day real less till dear read.</p>
+                    <ListItem>
+                        <span> ► </span>
+                        Support via E-mail and Phone
+                    </ListItem>
 
-            <Aboutustext>
-                <h6>ABOUT US</h6>
-                <h1>IT Solution Strategy <br /> Development For Your<br />Bussiness</h1>
-                <p>Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can
-                    manor
-                    smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed
-                    but
-                    wishes. You day real less till dear read.</p>
-                <Listitem>
-                    <span> ► </span>
-                    Support via E-mail and Phone
-                </Listitem>
-
-                <Listitem>
-                    <span> ► </span>
-                    Multi-Language Support
-                </Listitem>
-                <Strgbtn type="button">Read More</Strgbtn>
-            </Aboutustext>
+                    <ListItem>
+                        <span> ► </span>
+                        Multi-Language Support
+                    </ListItem>
+                    <StrgBtn type="button">Read More</StrgBtn>
+                </AboutUsText>
 
 
-            <Aboutusimage><Imgaboutus src={aboutusiamge} /></Aboutusimage>
+                <AboutUsImage><ImgAboutUs src={aboutusiamge} /></AboutUsImage>
 
-        </Aboutuscomonentscont>
+            </AboutUsComonentsCont>
+        </AboutUsContainerStle>
     )
 }
-export default Aboutuscomonents;
+export default AboutUsComponents;
+
+
+
+
+
+
