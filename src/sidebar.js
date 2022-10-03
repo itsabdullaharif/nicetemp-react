@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MainView from "./container/MainView";
-import SidebarComp from "./component/Navbar/sidebarcomp";
-import Contact from "./component/pages/contact";
+import MainView from "./Container/MainView";
+import SidebarComp from "./component/Navbar/SidebarComp";
+import Contact from "./component/pages/Contact";
 
 
 

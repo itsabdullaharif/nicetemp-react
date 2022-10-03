@@ -26,7 +26,3 @@ function FooterComponents() {
     )
 }
 export default FooterComponents;
-
-
-
-
