@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import styled from "styled-components"
 import menu from "../../assests/menu.png"
 import "../Navbar/Navbar.css"
-import Contact from "../pages/Contact"
+import Contact from "../pages/contact"
 export const Navbar = styled.div`
 .fa-x{
   font-size: 2rem;

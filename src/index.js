@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import MainView from './Container/MainView';
+import MainView from '../src/container/MainView'
 import Sidebar from './Sidebar';
-import Contact from './component/pages/Contact';
+import Contact from './component/pages/contact';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
